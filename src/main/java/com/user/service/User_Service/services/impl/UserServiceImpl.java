@@ -31,4 +31,10 @@ public class UserServiceImpl implements UserService {
     public User getUser(String userId) {
         return userRepository.findById(userId).orElseThrow(()-> new ResourceNotFoundException("User with given id is not available on server" +userId));
     }
+@Override
+    public User deleteUser(String userId){
+        return userRepository.findById(userId).orElseThrow(()-> new ResourceNotFoundException("User with given id is not available on server" +userId));
+}
+
+
 }

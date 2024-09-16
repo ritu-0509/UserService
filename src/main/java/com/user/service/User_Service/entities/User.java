@@ -25,7 +25,6 @@ public class User {
     @Column(name="EMAIL")
     private String email;
     @Column(name="GENDER")
-
     private String gender;
 
 

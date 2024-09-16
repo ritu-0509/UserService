@@ -12,6 +12,8 @@ public interface UserService {
 
     User getUser(String userId);// get specific user whose id is mentioned
 
+    User deleteUser(String userId);// delete user by email
+
 
 }
 
